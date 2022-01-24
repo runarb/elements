@@ -33,7 +33,7 @@ export default ({ mode }) => {
     // base: isProduction ? '/elements/' : '',
     plugins: [
       // litElementTailwindPlugin({ mode }),
-      html({
+      html.default({
         inject: {
           injectOptions: { views: ['pages/includes'] },
         },
